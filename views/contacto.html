@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Turismo Explorer</title>
+	<meta name="description" content="">
+	<!-- Permite adaptación a móviles/tablets -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/style.css">
+	<script src="https://kit.fontawesome.com/6245bf879a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header>
+		<h1>Turismo Explorer</h1>
+		<!--Navegacion principal-->
+		<nav class="navbar">
+			<a href="index.html" class="logo">HUELLAS ARGENTINAS</a>
+			<ul class="nav-menu">
+				<!-- Destinos -->
+				<li class="nav-item">
+					<a href="destino.html" class="nav-link">Destinos</a>
+					<div class="mega-menu-destinos">
+						<div class="mega-menu-grid">
+							<div class="mega-menu-column">
+								<ul>
+									<li><a href="destino.html"><span class="icon"><i class="fa-solid fa-umbrella-beach fa-fw"
+													style="color: rgb(255,225,59);"></i></span> Playa</a></li>
+									<li><a href="destino.html"><span class="icon"><i class="fa-solid fa-mountain fa-fw"
+													style="color: rgb(54, 134, 8);"></i></span> Montaña</a></li>
+									<li><a href="destino.html"><span class="icon"><i class="fa-solid fa-city fa-fw"
+													style="color: rgb(0, 123, 255);"></i></span> Ciudades</a></li>
+									<li><a href="destino.html"><span class="icon"><i class="fa-solid fa-theater-masks fa-fw"
+													style="color: rgb(214, 151, 252);"></i></span> Cultura</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+				<!--Agencias-->
+				<li class="nav-item">
+					<a href="agencias.html" class="nav-link">Agencias</a>
+					<!-- Mega-menú Agencias -->
+					<div class="mega-menu">
+						<ul>
+							<li><a href="agencias.html#norte"><span class="icon"><i class="fa-solid fa-building fa-fw"
+											style="color: rgb(0, 123, 255);"></i></span>Agencia Norte</a></li>
+							<li><a href="agencias.html#sur"><span class="icon"><i class="fa-solid fa-building fa-fw"
+											style="color: rgb(0, 123, 255);"></i></span>Agencia Sur</a></li>
+							<li><a href="agencias.html#internacional"><span class="icon"><i class="fa-solid fa-building fa-fw"
+											style="color: rgb(0, 123, 255);"></i></span>Agencia Internacional</a></li>
+						</ul>
+					</div>
+				</li>
+				<!--Precios-->
+				<li class="nav-item">
+					<a href="precio.html" class="nav-link">Precios</a>
+					<!-- Mega-menú Precios -->
+					<div class="mega-menu">
+						<ul>
+							<li><a href="precio.html"><span class="icon"><i class="fa-solid fa-tag fa-fw"
+											style="color: rgb(255, 0, 0);"></i></span>Ofertas</a></li>
+							<li><a href="precio.html"><span class="icon"><i class="fa-solid fa-chart-line fa-fw"
+											style="color: rgb(0, 255, 0);"></i></span>Comparativas</a></li>
+							<li><a href="precio.html"><span class="icon"><i class="fa-solid fa-box fa-fw"
+											style="color: rgb(0, 0, 255);"></i></span>Paquetes</a></li>
+						</ul>
+					</div>
+
+				</li>
+
+				<!--Blog-->
+				<li class="nav-item">
+					<a href="nuestro_blog.html" class="nav-link">Blog</a>
+				</li>
+				<!--Contacto-->
+				<li class="nav-item">
+					<a href="contacto.html" class="nav-link">Contacto</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+		<section class="contact-section">
+			<div class="contact-container">
+				<h2>Contactanos</h2>
+				<form id="contactForm" class="contact-form">
+					<div class="form-group">
+						<label for="name">Nombre Completo</label>
+						<input type="text" id="name" name="name" required pattern="[a-zA-ZáéíóúÁÉÍÓÚ\s]{3,}">
+						<span class="error-message">Ingresa un nombre válido (mínimo 3 caracteres)</span>
+					</div>
+
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" required>
+						<span class="error-message">Ingresa un email válido</span>
+					</div>
+
+					<div class="form-group">
+						<label for="phone">Teléfono</label>
+						<input type="tel" id="phone" name="phone" required pattern="[0-9+\-\s()]{8,}">
+						<span class="error-message">Ingresa un teléfono válido</span>
+					</div>
+
+					<div class="form-group">
+						<label for="destination">Destino de Interés</label>
+						<select id="destination" name="destination" required>
+							<option value="">Selecciona un destino</option>
+							<option value="mendoza">Mendoza</option>
+							<option value="bariloche">Bariloche</option>
+							<option value="cataratas">Cataratas del Iguazú</option>
+							<option value="buenos-aires">Buenos Aires</option>
+							<option value="salta">Salta</option>
+							<option value="cordoba">Córdoba</option>
+							<option value="jujuy">Jujuy</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="message">Mensaje</label>
+						<textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+						<span class="error-message">El mensaje debe tener al menos 10 caracteres</span>
+					</div>
+
+					<button type="submit" class="submit-btn">
+						<span class="btn-text">Enviar Consulta</span>
+						<div class="spinner"></div>
+					</button>
+				</form>
+			</div>
+
+			<!-- Modal de Confirmación -->
+			<div id="confirmModal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<div class="modal-header">
+						<h3>¡Gracias!</h3>
+					</div>
+					<div class="modal-body">
+						<p>Tu consulta ha sido enviada exitosamente.</p>
+						<p>Nos pondremos en contacto pronto.</p>
+					</div>
+					<button class="modal-btn">Cerrar</button>
+				</div>
+			</div>
+		</section>
+		<script>
+			const form = document.getElementById('contactForm');
+			const modal = document.getElementById('confirmModal');
+			const closeBtn = document.querySelector('.close');
+			const modalBtn = document.querySelector('.modal-btn');
+
+			form.addEventListener('submit', (e) => {
+				e.preventDefault();
+				if (form.checkValidity()) {
+					form.classList.add('loading');
+					setTimeout(() => {
+						form.classList.remove('loading');
+						modal.style.display = 'block';
+						form.reset();
+					}, 2000);
+				}
+			});
+
+			closeBtn.addEventListener('click', () => {
+				modal.style.display = 'none';
+			});
+
+			modalBtn.addEventListener('click', () => {
+				modal.style.display = 'none';
+			});
+
+			window.addEventListener('click', (e) => {
+				if (e.target === modal) {
+					modal.style.display = 'none';
+				}
+			});
+		</script>
+</body>
+
+</html>

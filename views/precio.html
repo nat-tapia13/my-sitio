@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/6245bf879a.js" crossorigin="anonymous"></script>
+    <title>Comparador de Precios - Destinos</title>
+</head>
+<body>
+    <header>
+		<!--Navegacion principal-->
+		<nav class="navbar">
+			<a href="index.html" class="logo">TURISMO</a>
+			<ul class="nav-menu">
+				<!-- Destinos -->
+				<li class="nav-item">
+					<a href="destino.html" class="nav-link">Destinos</a>
+					<div class="mega-menu-destinos">
+						<div class="mega-menu-grid">
+							<div class="mega-menu-column">
+								<ul>
+                                    <li><a href="#"><span class="icon"><i class="fa-solid fa-umbrella-beach fa-fw" style="color: rgb(255,225,59);"></i></span> Playa</a></li>
+										<li><a href="#"><span class="icon"><i class="fa-solid fa-mountain fa-fw" style="color: rgb(54, 134, 8);"></i></span> Montaña</a></li>
+										<li><a href="#"><span class="icon"><i class="fa-solid fa-city fa-fw" style="color: rgb(0, 123, 255);"></i></span> Ciudades</a></li>
+										<li><a href="#"><span class="icon"><i class="fa-solid fa-theater-masks fa-fw" style="color: rgb(214, 151, 252);"></i></span> Cultura</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+				<!--Agencias-->
+				<li class="nav-item">
+					<a href="agencias.html" class="nav-link">Agencias</a>
+					<!-- Mega-menú Agencias -->
+					<div class="mega-menu">
+						<ul>
+							<li><a href="#"><span class="icon"><i class="fa-solid fa-building fa-fw" style="color: rgb(0, 123, 255);"></i></span>Agencia Norte</a></li>
+							<li><a href="#"><span class="icon"><i class="fa-solid fa-building fa-fw" style="color: rgb(0, 123, 255);"></i></span>Agencia Sur</a></li>
+							<li><a href="#"><span class="icon"><i class="fa-solid fa-building fa-fw" style="color: rgb(0, 123, 255);"></i></span>Agencia Internacional</a></li>
+						</ul>
+					</div>
+				</li>
+				<!--Precios-->
+				<li class="nav-item">
+					<a href="precio.html" class="nav-link">Precios</a>
+					<!-- Mega-menú Precios -->
+					<div class="mega-menu">
+						<ul>
+							<li><a href="#"><span class="icon"><i class="fa-solid fa-tag fa-fw" style="color: rgb(255, 0, 0);"></i></span>Ofertas</a></li>
+								<li><a href="#"><span class="icon"><i class="fa-solid fa-chart-line fa-fw" style="color: rgb(0, 123, 255);"></i></span>Comparativas</a></li>
+								<li><a href="#"><span class="icon"><i class="fa-solid fa-box fa-fw" style="color: rgb(0, 123, 255);"></i></span>Paquetes</a></li>
+						</ul>
+					</div>
+
+				</li>
+
+				<!--Blog-->
+				<li class="nav-item">
+					<a href="nuestro_blog.html" class="nav-link">Blog</a>
+				</li>
+				<!--Contacto-->
+				<li class="nav-item">
+					<a href="contacto.html" class="nav-link">Contacto</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+    <div class="container">
+        <h1>Comparador de Precios - Destinos</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Destino</th>
+                    <th>Precio Base</th>
+                    <th>Incluye</th>
+                    <th>Destacado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Cancún, México</strong></td>
+                    <td class="price">$899</td>
+                    <td>
+                        <ul class="feature-list">
+                            <li><span class="tooltip" data-tooltip="Incluye acceso ilimitado">Acceso Playas</span></li>
+                            <li>5 noches hotel</li>
+                            <li><span class="tooltip" data-tooltip="Transporte terrestre incluido">Transfers</span></li>
+                        </ul>
+                    </td>
+                    <td>⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td><strong>Barcelona, España</strong></td>
+                    <td class="price">$1,299</td>
+                    <td>
+                        <ul class="feature-list">
+                            <li><span class="tooltip" data-tooltip="Entrada a museos principales">Museos</span></li>
+                            <li>3 noches hotel</li>
+                            <li><span class="tooltip" data-tooltip="Tour guiado por la ciudad">Tour city</span></li>
+                        </ul>
+                    </td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td><strong>Bali, Indonesia</strong></td>
+                    <td class="price">$749</td>
+                    <td>
+                        <ul class="feature-list">
+                            <li><span class="tooltip" data-tooltip="Clases diarias incluidas">Yoga</span></li>
+                            <li>7 noches resort</li>
+                            <li><span class="tooltip" data-tooltip="Comidas en restaurante local">Alimentación</span></li>
+                        </ul>
+                    </td>
+                    <td>⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td><strong>París, Francia</strong></td>
+                    <td class="price">$1,599</td>
+                    <td>
+                        <ul class="feature-list">
+                            <li><span class="tooltip" data-tooltip="Entrada a Torre Eiffel">Monumentos</span></li>
+                            <li>4 noches hotel</li>
+                            <li><span class="tooltip" data-tooltip="Crucero por el Sena">Crucero</span></li>
+                        </ul>
+                    </td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+     <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2026 Portal de Turismo - Todas las agencias verificadas</p>
+    </footer>
+
+</body>
+</html>

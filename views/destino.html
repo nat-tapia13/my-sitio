@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Turismo Destino</title>
+    <meta name="description" content="">
+    <!-- Permite adaptación a móviles/tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/6245bf879a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <!--Navegacion Principal-->
+        <nav class="navbar">
+            <a href="index.html" class="logo">INICIO</a>
+            <ul class="nav-menu">
+                <!-- Destinos -->
+                <li class="nav-item">
+                    <a href="destino.html" class="nav-link">Destinos</a>
+                    <div class="mega-menu-destinos">
+                        <div class="mega-menu-grid">
+                            <div class="mega-menu-column">
+                                <ul>
+                                    	<li><a href="#"><span class="icon"><i class="fa-solid fa-umbrella-beach fa-fw" style="color: rgb(255,225,59);"></i></span> Playa</a></li>
+										<li><a href="#"><span class="icon"><i class="fa-solid fa-mountain fa-fw" style="color: rgb(54, 134, 8);"></i></span> Montaña</a></li>
+										<li><a href="#"><span class="icon"><i class="fa-solid fa-city fa-fw" style="color: rgb(0, 123, 255);"></i></span> Ciudades</a></li>
+										<li><a href="#"><span class="icon"><i class="fa-solid fa-theater-masks fa-fw" style="color: rgb(214, 151, 252);"></i></span> Cultura</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!--Agencias-->
+                <li class="nav-item">
+                    <a href="agencias.html" class="nav-link">Agencias</a>
+                    <!-- Mega-menú Agencias -->
+                    <div class="mega-menu">
+                        <ul>
+                           	<li><a href="agencias.html"><span class="icon"><i class="fa-solid fa-building fa-fw" style="color: rgb(0, 123, 255);"></i></span>Agencia Norte</a></li>
+								<li><a href="agencias.html"><span class="icon"><i class="fa-solid fa-building fa-fw" style="color: rgb(0, 123, 255);"></i></span>Agencia Sur</a></li>
+								<li><a href="agencias.html"><span class="icon"><i class="fa-solid fa-building fa-fw" style="color: rgb(0, 123, 255);"></i></span>Agencia Internacional</a></li> 
+                        </ul>
+                    </div>
+                </li>
+                <!--Precios-->
+                <li class="nav-item">
+                    <a href="precio.html" class="nav-link">Precios</a>
+                    <!-- Mega-menú Precios -->
+                    <div class="mega-menu">
+                        <ul>
+                            <li><a href="#">Ofertas</a></li>
+                            <li><a href="#">Comparativas</a></li>
+                            <li><a href="#">Paquetes</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+
+                <!--Blog-->
+                <li class="nav-item">
+                    <a href="nuestro_blog.html" class="nav-link">Blog</a>
+                </li>
+                <!--Contacto-->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contenedor">
+        <!-- FILTROS-->
+        <h2>Destinos Turísticos</h2>
+        <p>Descubre lugares increíbles para viajar</p>
+
+        <input type="radio" name="filtro" id="todos" checked>
+        <label for="todos">Todos</label>
+
+        <input type="radio" name="filtro" id="cultural">
+        <label for="cultural">Cultural</label>
+
+        <input type="radio" name="filtro" id="naturaleza">
+        <label for="naturaleza">Naturaleza</label>
+
+        <input type="radio" name="filtro" id="playa">
+        <label for="playa">Sol y Playa</label>
+
+        <input type="radio" name="filtro" id="gastronomico">
+        <label for="gastronomico">Gastronomía</label>
+
+        <input type="radio" name="filtro" id="religioso">
+        <label for="religioso">Religioso</label>
+
+        <!-- GALERÍA / GRID-->
+
+        <main id="galeria">
+            <section>
+                <article class="destino cultural">
+                    <figure>
+                        <img src="../img/cultura.jpeg" alt="Cerro de los 7 colores">
+                        <figcaption>
+                            <h3>Cerro de 7 Colores</h3>
+                            <p>Historia y cultura ancestral.</p>
+                        </figcaption>
+                </article>
+                <article class="destino naturaleza">
+                    <figure>
+                        <img src="../img/naturaleza.jpg" alt="Parque Nacional Los Arrayanes">
+                        <figcaption>
+                            <h3>Parque Nacional Los Arrayanes</h3>
+                            <p>Reserva patagónica natural del mundo.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="destino playa">
+                    <figure>
+                        <img src="../img/sol y playa.jpg" alt="Mar Chiquita">
+                        <figcaption>
+                            <h3>Mar Chiquita</h3>
+                            <p>Lago Costero.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="destino gastronomico">
+                    <figure>
+                        <img src="../img/gastronomia.jpg" alt="Jujuy">
+                        <figcaption>
+                            <h3>Purmamarca</h3>
+                            <p>Vinos y gastronomía.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="destino religioso">
+                    <figure>
+                        <img src="../img/religion.jpg" alt="Capilla">
+                        <figcaption>
+                            <h3>Capilla</h3>
+                            <p>Centro espiritual.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+        </main>
+
+    </section>
+
+    <!-- TABLA DE PRECIOS -->
+    <section class="tabla">
+        <h2>Precios de viajes</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Destino</th>
+                    <th>Categoría</th>
+                    <th>Días</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Cerro de los 7 Colores</td>
+                    <td>Cultural</td>
+                    <td>5</td>
+                    <td>$500</td>
+                </tr>
+
+                <tr>
+                    <td>Parque Nacional Los Arrayanes</td>
+                    <td>Naturaleza</td>
+                    <td>3</td>
+                    <td>$350</td>
+                </tr>
+
+                <tr>
+                    <td>Mar Chiquita</td>
+                    <td>Playa</td>
+                    <td>7</td>
+                    <td>$900</td>
+                </tr>
+
+                <tr>
+                    <td>Purmamarca</td>
+                    <td>Gastronómico</td>
+                    <td>4</td>
+                    <td>$450</td>
+                </tr>
+
+                <tr>
+                    <td>Capilla</td>
+                    <td>Religioso</td>
+                    <td>6</td>
+                    <td>$800</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Turismo - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+
+</html>
